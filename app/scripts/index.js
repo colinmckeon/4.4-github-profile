@@ -23,7 +23,12 @@ $.ajax('https://api.github.com/users/colinmckeon').then(displayGit);
 
 function displayGit(data){
   console.log(data);
+
+  var source = $('#sideTemplate').html();
+  console.log(source);
 }
+
+
 
 
 

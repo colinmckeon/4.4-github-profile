@@ -13,6 +13,10 @@
 
     <div class="container">
 
+            <!-- *******************************
+            HEADER
+            **********************************-->
+
       <div class="row">
         <div class="col-md-12">
 
@@ -23,9 +27,39 @@
             <a class="headerLinks" href="#">Gist</a>
 
           </div>
-
         </div> <!--col-md-12 div end-->
       </div> <!-- row div end-->
+
+            <!-- *******************************
+            SIDEBAR
+            **********************************-->
+
+
+      <div class="row">
+        <div class="col-md-2">
+          <div class="sidebar">
+
+
+
+        </div> <!--col-md-2 div end-->
+
+
+
+
+
+
+
+
+
+
+        <div class="col-md-10">
+
+        </div> <!--col-md-10 div end-->
+
+      </div> <!-- row div end #2-->
+
+
+
 
 
     </div> <!-- container div end-->
@@ -33,9 +67,19 @@
 
 
 
-
-
-
+<script id="sideTemplate" type="text/x-handlebars-template">
+    <div id="avatar">
+      <img src="{{avatar_url}}" alt="name" />
+    </div>
+    <h3>{{name}}</h3>
+    <h4>{{login}}</h4>
+    <h4>{{bio}}</h4>
+    <button name="button">Edit profile</button>
+    <h5>{{location}}</h5>
+    <a href="{{email}}"></a>
+    <a href="{{blog}}"></a>
+    </div>
+</script>
 
     <script src="js/bundle.js"></script>
   </body>

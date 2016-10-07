@@ -25,9 +25,14 @@ function displayGit(data){
   console.log(data);
 
   var source = $('#sideTemplate').html();
-  console.log(source);
-}
+  var template = Handlebars.compile(source);
 
+  var templateHtml = $(template(data));
+
+  var $sidebar = $('#sidebar');
+
+  $sidebar.append(templateHtml);
+}
 
 
 

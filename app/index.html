@@ -50,16 +50,14 @@
 
 
 
-
-
-
-
-
-
+        <!-- *******************************
+        REPOS
+        **********************************-->
 
         <div class="col-md-10">
           <div id="repos">
 
+          <!--REPOS TEMPLATE GOES HERE-->
 
           </div>
         </div> <!--col-md-10 div end-->
@@ -73,8 +71,9 @@
     </div> <!-- container div end-->
 
 
-
-
+    <!-- *******************************
+    SIDEBAR TEMPLATE
+    **********************************-->
 <script id="sideTemplate" type="text/x-handlebars-template">
     <div id="avatar">
       <img src="{{avatar_url}}" alt="name" />
@@ -88,7 +87,9 @@
     <a href="{{blog}}"></a>
     </div>
 </script>
-
+    <!-- *******************************
+    REPOS TEMPLATE
+    **********************************-->
 <script id="reposTemplate" type="text/x-handlebars-template">
   <div class="row">
 
@@ -110,6 +111,17 @@
 
   </div>
 </script>
+    <!-- *******************************
+    ORGANIZATIONS TEMPLATE
+    **********************************-->
+
+<script id="orgsTemplate" type="text/x-handlebars-template">
+  <h4>Organizations</h4>
+  <div>
+    <img src="{{avatar_url}}" alt="">
+  </div>
+</script>
+
 
     <script src="js/bundle.js"></script>
   </body>

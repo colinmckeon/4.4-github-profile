@@ -58,7 +58,23 @@ function displayRepos(data){
   });
 }
 
+//
+//ORGANIZATIONS AJAX CALL
 
+$.ajax('https://api.github.com/users/colinmckeon/orgs').then(displayOrgs)
+
+function displayOrgs(data) {
+  console.log(data);
+
+  var source = $('#orgsTemplate').html();
+  var template = Handlebars.compile(source);
+
+  var templateHtml = $(template(data[0]));
+
+  var $orgs = $('#orgsIcon');
+
+  $orgs.append(templateHtml);
+}
 
 
 //   var planets = data.results;

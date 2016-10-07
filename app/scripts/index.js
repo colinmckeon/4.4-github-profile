@@ -18,6 +18,10 @@ if(githubtoken !== undefined){
   })
 }
 
+
+//
+//SIDE PANEL AJAX CALL
+
 $.ajax('https://api.github.com/users/colinmckeon').then(displayGit);
 
 
@@ -35,7 +39,8 @@ function displayGit(data){
 }
 
 
-
+//
+//REPOS AJAX CALL
 
 $.ajax('https://api.github.com/users/colinmckeon/repos').then(displayRepos)
 

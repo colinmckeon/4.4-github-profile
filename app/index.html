@@ -90,9 +90,25 @@
 </script>
 
 <script id="reposTemplate" type="text/x-handlebars-template">
+  <div class="row">
 
-  <h5><a href="#">{{name}}</a></h5>
+    <div class="col-md-6">
+    <h5><a href="#">{{name}}</a></h5>
+    </div>
 
+    <div class="col-md-3">
+      *^**^**^**^*
+    </div>
+
+    <div class="col-md-2">
+      <span class="language {{language}}">{{language}}</span>
+    </div>
+
+    <div class="col-md-1">
+      <span>{{stargazers_count}}</span>
+    </div>
+
+  </div>
 </script>
 
     <script src="js/bundle.js"></script>

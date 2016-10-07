@@ -25,3 +25,25 @@ img {
   color: black;
   font-weight: bold;
 }
+
+
+.language{
+
+
+  &::before{
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  &.JavaScript::before{
+    background: #F1E05A;
+  }
+  &.CSS::before{
+    background: #563D7C;
+  }
+  &.HTML::before{
+    background: #E44B23;
+  }
+}

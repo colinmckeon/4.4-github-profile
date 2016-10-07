@@ -37,6 +37,22 @@ function displayGit(data){
 
 
 
+$.ajax('https://api.github.com/users/colinmckeon/repos').then(displayRepos)
+
+function displayRepos(data){
+  console.log(data);
+
+  var source = $('#reposTemplate').html();
+  var template = Handlebars.compile(source);
+
+  var $repos = $('#repos');
+
+  data.forEach(function(repo){
+    var templateHtml = $(template(repo));
+    $repos.append(templateHtml)
+  });
+}
+
 
 
 

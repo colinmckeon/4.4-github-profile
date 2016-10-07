@@ -39,8 +39,13 @@
         <div class="col-md-2">
           <div id="sidebar">
 
-
+            <!--template goes here-->
           </div>
+
+          <div id="orgsIcon">
+            <!--template goes here-->
+          </div>
+
         </div> <!--col-md-2 div end-->
 
 
@@ -53,7 +58,10 @@
 
 
         <div class="col-md-10">
+          <div id="repos">
 
+
+          </div>
         </div> <!--col-md-10 div end-->
 
       </div> <!-- row div end #2-->
@@ -79,6 +87,12 @@
     <a href="{{email}}"></a>
     <a href="{{blog}}"></a>
     </div>
+</script>
+
+<script id="reposTemplate" type="text/x-handlebars-template">
+
+  <h5><a href="#">{{name}}</a></h5>
+
 </script>
 
     <script src="js/bundle.js"></script>

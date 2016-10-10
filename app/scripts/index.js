@@ -6,6 +6,8 @@
 var $ = require('jquery');
 var _ = require('underscore');
 var Handlebars = require('handlebars');
+var moment = require('moment');
+
 
 
 var githubtoken = require('./gitapikey.js');
@@ -27,6 +29,8 @@ $.ajax('https://api.github.com/users/colinmckeon').then(displayGit);
 
 function displayGit(data){
   console.log(data);
+
+  data.created_at = moment(data.created_at).format('MMMM Do, YYYY');
 
   var source = $('#sideTemplate').html();
   var template = Handlebars.compile(source);

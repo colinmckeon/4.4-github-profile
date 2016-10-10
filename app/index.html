@@ -105,14 +105,15 @@
     </div>
 
     <div class="col-md-2">
-      <span class="language {{language}}">{{language}}</span>
+      <span class="language {{language}}"> &nbsp;{{language}}</span>
     </div>
 
     <div class="col-md-1">
-      <span>{{stargazers_count}}</span>
+      <span><i class="fa fa-star" aria-hidden="true"></i> &nbsp; {{stargazers_count}}</span>
     </div>
 
   </div>
+  <hr>
 </script>
     <!-- *******************************
     ORGANIZATIONS TEMPLATE
@@ -120,7 +121,7 @@
 
 <script id="orgsTemplate" type="text/x-handlebars-template">
   <h4>Organizations</h4>
-  <div>
+  <div id="avatarImg">
     <img src="{{avatar_url}}" alt="">
   </div>
 </script>

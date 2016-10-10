@@ -10,15 +10,15 @@ var moment = require('moment');
 
 
 
-var githubtoken = require('./gitapikey.js');
-
-if(githubtoken !== undefined){
-  $.ajaxSetup({
-    headers: {
-      'Authorization': 'token ' + githubtoken.token
-    }
-  })
-}
+// var githubtoken = require('./gitapikey.js');
+//
+// if(githubtoken !== undefined){
+//   $.ajaxSetup({
+//     headers: {
+//       'Authorization': 'token ' + githubtoken.token
+//     }
+//   })
+// }
 
 
 //

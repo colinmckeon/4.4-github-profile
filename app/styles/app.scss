@@ -16,6 +16,15 @@ img {
   max-width: 100%;
 }
 
+.topContainer{
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+#searchGithub{
+  width: 350px;
+  color: #CECECE;
+}
 
 .fa-github{
   font-size: 30px;
@@ -24,6 +33,16 @@ img {
 .headerLinks{
   color: black;
   font-weight: bold;
+}
+
+.repoBarLinks{
+  color: #767676;
+  font-size: 16px;
+}
+
+#searchBox-repos{
+  width: 350px;
+  color: #CECECE;
 }
 
 

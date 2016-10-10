@@ -11,7 +11,7 @@
 
   <body>
 
-    <div class="container">
+    <div class="container topContainer">
 
             <!-- *******************************
             HEADER
@@ -21,24 +21,25 @@
         <div class="col-md-12">
 
           <div class="header">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <a class="headerLinks" href="#">Pull requests</a>
-            <a class="headerLinks" href="#">Issues</a>
+            <i class="fa fa-github" aria-hidden="true"></i> &nbsp;
+            <input id="searchGithub" type="text" value="Search GitHub"> &nbsp;
+            <a class="headerLinks" href="#">Pull requests &nbsp;</a>
+            <a class="headerLinks" href="#">Issues &nbsp;</a>
             <a class="headerLinks" href="#">Gist</a>
 
           </div>
         </div> <!--col-md-12 div end-->
       </div> <!-- row div end-->
+    </div> <!-- first container end -->
 
             <!-- *******************************
             SIDEBAR
             **********************************-->
 
-
+    <div class="container">
       <div class="row">
         <div class="col-md-2">
           <div id="sidebar">
-
             <!--template goes here-->
           </div>
 
@@ -55,7 +56,21 @@
         **********************************-->
 
         <div class="col-md-10">
-
+          <div class="repoBar">
+            <a class="repoBarLinks" href="#">Overview</a>
+            <a class="repoBarLinks" href="#">Repositories</a>
+            <a class="repoBarLinks" href="#">Stars</a>
+            <a class="repoBarLinks" href="#">Followers</a>
+            <a class="repoBarLinks" href="#">Following</a>
+            <hr>
+          </div>
+          <div class="searchRepos">
+            <input id="searchBox-repos" type="text" value="Search Repositories...">
+            <button name="button">Type: <b>All</b></button>
+            <button name="button">Language: <b>All</b></button>
+            <button name="button">New</button>
+            <hr>
+          </div>
           <div id="repos">
 
           <!--REPOS TEMPLATE GOES HERE-->

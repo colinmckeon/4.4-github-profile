@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4.4-github-profile</title>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+
+  <body>
+
+    <header>
+      <div class="container topContainer">
+
+              <!-- *******************************
+              HEADER
+              **********************************-->
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="header">
+              <i class="fa fa-github" aria-hidden="true"></i> &nbsp;
+              <input id="searchGithub" type="text" value="Search GitHub"> &nbsp;
+              <a class="headerLinks" href="#">Pull requests &nbsp;</a>
+              <a class="headerLinks" href="#">Issues &nbsp;</a>
+              <a class="headerLinks" href="#">Gist</a>
+
+            </div>
+          </div> <!--col-md-12 div end-->
+        </div> <!-- row div end-->
+      </div> <!-- first container end -->
+    </header>
+
+            <!-- *******************************
+            SIDEBAR
+            **********************************-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <div id="sidebar">
+            <!--template goes here-->
+          </div>
+
+          <div id="orgsIcon">
+            <!--template goes here-->
+          </div>
+
+        </div> <!--col-md-2 div end-->
+
+
+
+        <!-- *******************************
+        REPOS
+        **********************************-->
+
+        <div class="col-md-10">
+          <div class="repoBar">
+            <a class="repoBarLinks" href="#">Overview</a>
+            <a class="repoBarLinks" href="#">Repositories</a>
+            <a class="repoBarLinks" href="#">Stars</a>
+            <a class="repoBarLinks" href="#">Followers</a>
+            <a class="repoBarLinks" href="#">Following</a>
+            <hr>
+          </div>
+          <div class="searchRepos">
+            <input id="searchBox-repos" type="text" value="Search Repositories...">
+            <button name="button">Type: <b>All</b> <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            <button name="button">Language: <b>All</b> <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            <button id="newButton" name="button"><i class="fa fa-film" aria-hidden="true"></i>New</button>
+            <hr>
+          </div>
+          <div id="repos">
+
+          <!--REPOS TEMPLATE GOES HERE-->
+
+          </div>
+        </div> <!--col-md-10 div end-->
+
+      </div> <!-- row div end #2-->
+
+
+
+
+
+    </div> <!-- container div end-->
+
+
+    <!-- *******************************
+    SIDEBAR TEMPLATE
+    **********************************-->
+<script id="sideTemplate" type="text/x-handlebars-template">
+    <div id="avatar">
+      <img src="{{avatar_url}}" alt="name" />
+    </div>
+    <h3>{{name}}</h3>
+    <h4>{{login}}</h4>
+    <h4>{{bio}}</h4>
+    <button name="button">Edit profile</button>
+    <h5>{{location}}</h5>
+    <a href="{{email}}"></a>
+    <a href="{{blog}}"></a>
+    <h5>{{created_at}}</h5>
+    </div>
+</script>
+    <!-- *******************************
+    REPOS TEMPLATE
+    **********************************-->
+<script id="reposTemplate" type="text/x-handlebars-template">
+  <div class="row">
+
+    <div class="col-md-6">
+    <h4><a href="#">{{name}}</a></h4>
+    <h6>{{description}}</h6>
+    </div>
+
+    <div class="col-md-3">
+      *^**^**^**^*
+    </div>
+
+    <div class="col-md-2">
+      <span class="language {{language}}"> &nbsp;{{language}}</span>
+    </div>
+
+    <div class="col-md-1">
+      <span><i class="fa fa-star" aria-hidden="true"></i> &nbsp; {{stargazers_count}}</span>
+    </div>
+
+  </div>
+  <hr>
+</script>
+    <!-- *******************************
+    ORGANIZATIONS TEMPLATE
+    **********************************-->
+
+<script id="orgsTemplate" type="text/x-handlebars-template">
+  <h4>Organizations</h4>
+  <div id="avatarImg">
+    <img src="{{avatar_url}}" alt="">
+  </div>
+</script>
+
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
